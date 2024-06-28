@@ -8,7 +8,7 @@ import (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "mycli",
+	Use:   "9ick",
 	Short: "A CLI tool for generating project templates",
 	Long:  `A CLI tool that helps you generate project templates quickly.`,
 	Run: func(cmd *cobra.Command, args []string) {
