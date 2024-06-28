@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	reader "github.com/ei-sugimoto/9ick/internal/template"
+	reader "github.com/ei-sugimoto/9ick/internal/pkg"
 )
 
 func TestList(t *testing.T) {

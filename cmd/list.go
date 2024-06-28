@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	reader "github.com/ei-sugimoto/9ick/internal/template"
+	reader "github.com/ei-sugimoto/9ick/internal/pkg"
 	"github.com/spf13/cobra"
 )
 
