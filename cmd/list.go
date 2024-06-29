@@ -3,7 +3,7 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/ei-sugimoto/9ick/template"
+	reader "github.com/ei-sugimoto/9ick/internal/pkg"
 	"github.com/spf13/cobra"
 )
 
@@ -11,7 +11,9 @@ var listCmd = &cobra.Command{
 	Use:   "list",
 	Short: "List available templates",
 	Run: func(cmd *cobra.Command, args []string) {
-		templates, err := template.List()
+		r := reader.NewReader()
+
+		templates, err := r.List()
 		if err != nil {
 			fmt.Println("Error listing templates:", err)
 		}
